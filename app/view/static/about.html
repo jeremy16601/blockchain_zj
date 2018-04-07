@@ -1,0 +1,25 @@
+<%- include('../sidebar.html') %>
+
+<div id='content'>
+  <div class='panel'>
+    <div class='header'>
+      <ul class='breadcrumb'>
+        <li><a href='/'>主页</a><span class='divider'>/</span></li>
+        <li class='active'>关于</li>
+      </ul>
+    </div>
+    <div class='inner topic'>
+      <div class="topic_content">
+        <%- helper.markdown(`
+### 关于
+区块链技术社区是基于cnode社区egg-cnode源码实现的，感谢社区； 源码地址：https://github.com/cnodejs/egg-cnode/
+区块链技术社区是由一批热爱区块链技术开发的工程师发起，我们非常欢迎更多对区块链开发的工程师们加入！
+
+为了提高社区的专业性及发贴质量，目前只开放通过github注册入口
+
+目前社区由jeremy维护，如有任何关于社区的问题或建议，请发贴联系或邮件联系(jeremy16601@dingtalk.com)
+`) %>
+      </div>
+    </div>
+  </div>
+</div>
